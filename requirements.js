@@ -54,8 +54,8 @@ We need an API -
 
 // DELETE
 We need an API -
--   delete a book
--   delete an author
+-   delete a book ✅
+-   delete an author from a book ✅
 
 
 ++++----++++----++++----++++----++++----++++----++++----++++----++++
@@ -83,7 +83,7 @@ We need an API -
 
 // DELETE
 We need an API -
--   delete an author
+-   delete an author ✅
 
 
 ++++----++++----++++----++++----++++----++++----++++----++++----++++
@@ -111,7 +111,7 @@ We need an API -
 
 // DELETE
 We need an API -
--   delete the publication
+-   delete the publication ✅
 -   delete a book from publication
 
 
