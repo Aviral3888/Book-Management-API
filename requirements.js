@@ -112,7 +112,7 @@ We need an API -
 // DELETE
 We need an API -
 -   delete the publication ✅
--   delete a book from publication
+-   delete a book from publication ✅
 
 
 
