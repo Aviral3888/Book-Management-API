@@ -38,16 +38,19 @@ We need an API -
 -   to get specific books ✅
 -   to get list of books based on category ✅
 -   to get list of books based on languages ✅
+-   to get list of books based on authors ✅
 --------------------------------------------
 
 // POST
 We need an API -
 -   Add new book ✅
+--------------------------------------------
 
 // PUT
 We need an API -
 -   Update book title ✅
 -   update/add new author ✅
+--------------------------------------------
 
 // DELETE
 We need an API -
@@ -75,7 +78,7 @@ We need an API -
 
 // PUT
 We need an API -
--   Update author name
+-   Update author name ✅
 
 
 // DELETE
@@ -102,8 +105,8 @@ We need an API -
 
 // PUT
 We need an API -
--   Update publication name
--   Update/add books to publication
+-   Update publication name ✅
+-   Update/add new book to a publication ✅
 
 
 // DELETE
@@ -111,5 +114,10 @@ We need an API -
 -   delete the publication
 -   delete a book from publication
 
+
+
+EXTRA ::
+
+How the server serves the request.
 
 */

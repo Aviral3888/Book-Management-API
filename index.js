@@ -109,6 +109,34 @@ booky.get("/l/:language", (req, res) => {
 })
 
 
+/*
+Route               /a
+Description         Get list of books based on author
+Access              PUBLIC
+Parameters          author
+Method              GET
+*/
+
+booky.get("/a/:authorId", (req, res) => {
+
+    const getSpecificBook = database.books.filter(
+        (book) => book.author.includes(parseInt(req.params.authorId))
+    );
+
+    if (getSpecificBook.length === 0) {
+        return res.json({
+            error: `No book found for the author of ${req.params.authorId}`,
+        });
+    }
+
+    return res.json({
+        book: getSpecificBook
+    });
+})
+
+
+
+
 //  [[{{{{(((( AUTHOR APIs ))))}}}}]]
 
 
@@ -413,7 +441,7 @@ booky.put("/author/update/name/:authorId", (req, res) => {
 Route           /publication/update/name
 Description     Update publication name
 Access          PUBLIC
-Parameter       
+Parameter       publicationId
 Method          PUT
 */
 
@@ -433,6 +461,38 @@ booky.put("/publication/update/name/:publicationId", (req, res) => {
 });
 
 
+/*
+Route           /publication/update/book
+Description     Update/add new book to a publication
+Access          PUBLIC
+Parameter       
+Method          PUT
+*/
+
+booky.put("/publication/update/book/:isbn", (req, res) => {
+
+    // update publication database
+    database.publication.forEach((publication) => {
+        if (publication.id === req.body.pubId) {
+            return publication.books.push(req.params.isbn);
+        }
+    });
+
+    // update books database
+    database.books.forEach((book) => {
+        if (book.ISBN === req.params.isbn) {
+            book.publication = req.body.pubId;
+            return;
+        }
+    });
+
+    return res.json({
+        books: database.books,
+        publications: database.publication,
+        message: "Successfully Updated publications"
+    });
+
+});
 
 
 // ########################################
@@ -444,7 +504,6 @@ booky.put("/publication/update/name/:publicationId", (req, res) => {
 //  [[{{{{(((( AUTHOR APIs ))))}}}}]]
 
 //  [[{{{{(((( PUBLICATION  APIs ))))}}}}]]
-
 
 
 
