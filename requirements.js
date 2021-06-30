@@ -117,12 +117,16 @@ We need an API -
 
 
 EXTRA ::
-
 How the server serves the request.
 
 
+Connecting to External Database MongoDB.
+we need something ::
 
+-   That can talk to mongoDB in which mongoDB understands.
+-   and talk to user in which we understand ** javascript **
 
+-   This is done by mongoose
 
 
 

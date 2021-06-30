@@ -1,4 +1,7 @@
+require("dotenv").config();
+
 const express = require("express");
+const mongoose = require("mongoose");
 
 // Database : imported file
 const database = require("./database/database");
@@ -10,6 +13,16 @@ const port = 3000;
 // configuration
 booky.use(express.json());
 
+// Establish Database Connection
+
+mongoose.connect(
+    process.env.MONGO_URL, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useFindAndModify: false,
+        useCreateIndex: true
+    }
+).then(() => console.log("Connection Established!!!!!"));
 
 
 // Starting with API
