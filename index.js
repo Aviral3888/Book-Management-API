@@ -1,7 +1,7 @@
 const express = require("express");
 
 // Database : imported file
-const database = require("./database");
+const database = require("./database/database");
 
 // Initalization
 const booky = express();
