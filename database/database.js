@@ -1,3 +1,4 @@
+// Books Document / Object
 let books = [{
         ISBN: "12345ONE",
         title: "Getting started with MERN",
@@ -20,6 +21,7 @@ let books = [{
     },
 ];
 
+// Authors Document / Object
 const authors = [{
         id: 1,
         name: "pavan",
@@ -32,6 +34,7 @@ const authors = [{
     },
 ];
 
+// Publications Document / Object
 const publications = [{
         id: 1,
         name: "Chakra",
