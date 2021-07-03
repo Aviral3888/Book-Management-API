@@ -1,14 +1,13 @@
-const e = require("express");
 const mongoose = require("mongoose");
 
 // Creating a book schema :
 const BookSchema = mongoose.Schema({
     ISBN: String,
     title: String,
-    author: [Number],
+    authors: [Number],
     language: String,
     pubDate: String,
-    numPage: Number,
+    numOfPage: Number,
     category: [String],
     publication: Number
 })
