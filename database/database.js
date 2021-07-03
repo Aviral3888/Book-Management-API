@@ -30,7 +30,7 @@ const authors = [{
     {
         id: 2,
         name: "Deepak",
-        books: ["12345ONE"],
+        books: ["12345ONE", "12345Two"],
     },
 ];
 
@@ -38,17 +38,17 @@ const authors = [{
 const publications = [{
         id: 1,
         name: "Chakra",
-        books: ["12345ONE"],
+        books: ["12345ONE", "12345Two"],
     },
     {
         id: 2,
         name: "Vickie Publications",
-        books: [],
+        books: ["12345ONE"],
     },
 ];
 
 module.exports = {
     books,
-    author,
-    publication
+    authors,
+    publications
 };

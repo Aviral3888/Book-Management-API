@@ -1,4 +1,4 @@
-// Requirements for our project 📌
+// Requirements for our project
 
 /*
 
@@ -129,5 +129,16 @@ we need something ::
 -   This is done by mongoose
 
 
+
+*/
+
+/*
+Completed :
+
+- Using vscode Database
+    -   GET completed
+    -   POST completed
+    -   PUT completed
+    -   DELETE completed
 
 */
