@@ -1,0 +1,37 @@
+MongoDB Operators -> Powerful yet devs won't use them 
+
+Developers mainly use -- Maps and filter
+
+Operators :
+
+1. Update Operators :: 
+
+Logical :
+
+$inc -> increment  :: no separate operator for decrement 
+Eg : +1, +4, -3, -1, etc
+
+$min -> minimum
+
+$max -> maximum
+
+$set -> sets a data to an object property
+
+$unset -> removes a property from an object
+
+
+Arrays :
+
+$push ->
+
+$pop -> to remove element from last place
+
+$pull -> to extract data :: from any place in an array we use filter but as an operator we have pull with same functionality.
+
+$addToSet -> clever way of pushing data to an array.
+if an entry is already present in the array then it doesn't push and if entry is not present then it pushes to the main array.
+i.e. Unique elements only
+
+
+
+

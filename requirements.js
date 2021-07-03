@@ -48,13 +48,13 @@ We need an API -
 
 // PUT
 We need an API -
--   Update book title ✅
--   update/add new author ✅
+-   Update book title ✅ 📌
+-   update/add new author ✅ 📌
 --------------------------------------------
 
 // DELETE
 We need an API -
--   delete a book ✅
+-   delete a book ✅ 📌
 -   delete an author from a book ✅
 
 
