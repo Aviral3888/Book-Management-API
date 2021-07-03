@@ -34,16 +34,16 @@ ____BOOKs____
 // GET
 
 We need an API -
--   to get all books ✅
--   to get specific books ✅
--   to get list of books based on category ✅
--   to get list of books based on languages ✅
--   to get list of books based on authors ✅
+-   to get all books ✅ 📌
+-   to get specific books ✅ 📌
+-   to get list of books based on category ✅ 📌
+-   to get list of books based on languages ✅ 📌
+-   to get list of books based on authors ✅ 📌
 --------------------------------------------
 
 // POST
 We need an API -
--   Add new book ✅
+-   Add new book ✅ 📌
 --------------------------------------------
 
 // PUT
@@ -65,15 +65,15 @@ ____AUTHORs____
 // GET
 
 We need an API -
--   to get all authors ✅
--   to get specific authors ✅
--   to get list of authors based on books ✅
+-   to get all authors ✅ 📌
+-   to get specific authors ✅ 📌
+-   to get list of authors based on books ✅ 📌
 --------------------------------------------
 
 
 // POST
 We need an API -
--   Add new author ✅
+-   Add new author ✅ 📌
 
 
 // PUT
@@ -93,14 +93,14 @@ ____PUBLICATIONs____
 // GET
 
 We need an API -
--   to get all publications ✅
--   to get specific publications ✅
--   to get list of publications based on books ✅
+-   to get all publications ✅ 📌
+-   to get specific publications ✅ 📌
+-   to get list of publications based on books ✅ 📌
 --------------------------------------------
 
 // POST
 We need an API -
--   Add new publications ✅
+-   Add new publications ✅ 📌
 
 
 // PUT
@@ -140,5 +140,10 @@ Completed :
     -   POST completed
     -   PUT completed
     -   DELETE completed
+
+- Using MongoDB Database
+    -   GET completed
+    -   POST completed
+
 
 */
