@@ -55,7 +55,7 @@ We need an API -
 // DELETE
 We need an API -
 -   delete a book ✅ 📌
--   delete an author from a book ✅
+-   delete an author from a book ✅ 📌
 
 
 ++++----++++----++++----++++----++++----++++----++++----++++----++++
@@ -78,12 +78,12 @@ We need an API -
 
 // PUT
 We need an API -
--   Update author name ✅
+-   Update author name ✅ 📌
 
 
 // DELETE
 We need an API -
--   delete an author ✅
+-   delete an author ✅ 📌
 
 
 ++++----++++----++++----++++----++++----++++----++++----++++----++++
@@ -105,14 +105,14 @@ We need an API -
 
 // PUT
 We need an API -
--   Update publication name ✅
--   Update/add new book to a publication ✅
+-   Update publication name ✅ 📌
+-   Update/add new book to a publication ✅ 📌
 
 
 // DELETE
 We need an API -
--   delete the publication ✅
--   delete a book from publication ✅
+-   delete the publication ✅ 📌
+-   delete a book from publication ✅ 📌
 
 
 
@@ -128,8 +128,6 @@ we need something ::
 
 -   This is done by mongoose
 
-
-
 */
 
 /*
@@ -144,6 +142,29 @@ Completed :
 - Using MongoDB Database
     -   GET completed
     -   POST completed
+
+
+        Architecture
+
+1. Monolithic : -   Single page handles all the databases and API's.
+                -   Prone to failure  (fault tolerance )
+                -   Bug in one file can lead to downfall of whole system
+                -   Still companies use but not preferred
+                -   For large group working together
+
+2. Micro-services (in Trend)
+    -   Dividing the complete services into small micro particles.
+    -   to write API's Independently
+    -   Even if one service goes down other will keep on working...
+    -   Separate blocks for every API
+
+
+Advantages of Micro Services ::
+
+1. Express knows which API to call
+2. Fault tolerance is better : & our system can withstand errors
+3. Collaboration with team
+4. Code structure is better
 
 
 */
