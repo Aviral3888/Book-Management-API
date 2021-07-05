@@ -16,7 +16,6 @@ const port = 3000;
 booky.use(express.json());
 
 // Establish Database Connection
-
 mongoose.connect(
     process.env.MONGO_URL, {
         useNewUrlParser: true,

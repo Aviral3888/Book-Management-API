@@ -138,13 +138,20 @@ Method          POST
 
 Router.post("/add", async(req, res) => {
 
-    const { newBook } = req.body;
-    const addNewBook = BookModel.create(newBook);
+    try {
+        const { newBook } = req.body;
+        const addNewBook = await BookModel.create(newBook);
 
-    return res.json({
-        books: addNewBook,
-        message: "Book added successfully"
-    });
+        return res.json({
+            books: addNewBook,
+            message: "Book added successfully"
+        });
+    } catch (error) {
+        // throw new Error(error);
+        return res.json({
+            error: error.message
+        });
+    }
 
 })
 
